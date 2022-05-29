@@ -1,4 +1,4 @@
-# reading_glasses
+# glasses_calculator
 
 ## Project setup
 ```
