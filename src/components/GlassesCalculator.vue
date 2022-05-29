@@ -89,15 +89,17 @@ export default {
       我想要讓距離我的眼睛 <input class="input_distance" v-model="input_distance_1" :placeholder="default_distance_1" /> 公尺遠的東西，<br>
       看起來像在對焦距離我 <input class="input_distance" v-model="input_distance_2" :placeholder="default_distance_2" /> 公尺遠的東西。<br>
     </p>
-    <p v-if="(!is_input_myopia_incorrect) && (!is_input_distances_incorrect)">
-      則我需要 {{ degree_str }} 度的眼鏡
-      <span v-if="degree > 0">（老花眼鏡）</span>
-      <span v-if="degree < 0">（近視眼鏡）</span>
-      。
-    </p>
-    <p v-else>
-      <span v-if="is_input_myopia_incorrect" class="error_msg">{{ myopia_error }}<br></span>
-      <span v-if="is_input_distances_incorrect" class="error_msg">{{ distance_error }}<br></span>
+    <p class="result-wrapper">
+      <span v-if="(!is_input_myopia_incorrect) && (!is_input_distances_incorrect)">
+        則我需要 {{ degree_str }} 度的眼鏡
+        <span v-if="degree > 0">（老花眼鏡）</span>
+        <span v-if="degree < 0">（近視眼鏡）</span>
+        。
+      </span>
+      <span v-else>
+        <span v-if="is_input_myopia_incorrect" class="error_msg">{{ myopia_error }}<br></span>
+        <span v-if="is_input_distances_incorrect" class="error_msg">{{ distance_error }}<br></span>
+      </span>
     </p>
   </div>
 </template>
@@ -112,5 +114,8 @@ export default {
 }
 .error_msg {
   color: red;
+}
+.result-wrapper {
+  height: 4rem;
 }
 </style>
