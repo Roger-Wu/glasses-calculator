@@ -1,10 +1,11 @@
 /* eslint-disable no-console */
 // const execa = require("execa");
 // const fs = require("fs");
-const { execa } = await import("execa");
-const fs = await import("fs");
 (async () => {
   try {
+    const { execa } = await import("execa");
+    const fs = await import("fs");
+    
     // delete branch gh-pages and create again
     try {
         await execa("git", ["branch", "-D", "gh-pages"]);
