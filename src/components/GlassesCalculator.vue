@@ -111,6 +111,9 @@ export default {
   border-radius: 0;
   padding: 0 1px;
 }
+input::placeholder {
+  color: #AAA;
+}
 .error_msg {
   color: red;
 }
