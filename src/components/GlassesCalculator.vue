@@ -98,6 +98,10 @@ export default {
         <span v-if="is_input_distances_incorrect" class="error_msg">{{ distance_error }}<br></span>
       </span>
     </p>
+    <p class="more-info-wrapper">
+      若想更了解這個計算工具的用法或原理，請閱讀：<br>
+      <a href="https://medium.com/@rogerwutw/focal-distance-and-glasses-diopter-bfabf74f8732?sk=3b8128b42c5879057070c741405b4c29/" target="_blank">想讓距離眼睛 50 公分的書看起來像 2 公尺遠，要戴幾度的眼鏡？</a>
+    </p>
   </div>
 </template>
 
@@ -118,6 +122,9 @@ input::placeholder {
   color: red;
 }
 .result-wrapper {
-  height: 10rem;
+  height: 4rem;
+}
+.more-info-wrapper {
+  height: 6rem;
 }
 </style>
