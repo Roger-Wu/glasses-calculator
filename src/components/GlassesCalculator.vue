@@ -118,6 +118,6 @@ input::placeholder {
   color: red;
 }
 .result-wrapper {
-  height: 20rem;
+  height: 10rem;
 }
 </style>
