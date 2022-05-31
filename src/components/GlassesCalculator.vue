@@ -85,7 +85,7 @@ export default {
 <template>
   <div id="glasses_calculator">
     <p>
-      我有 -<input class="input_myopia_degree" v-model="input_myopia_degree" :placeholder="default_myopia_degree" /> 度的近視<br>
+      我有 <input class="input_myopia_degree" v-model="input_myopia_degree" :placeholder="default_myopia_degree" /> 度的近視<br>
       我想讓距離眼睛 <input class="input_distance" v-model="input_distance_1" :placeholder="default_distance_1" /> 公尺遠的東西<br>
       看起來像在對焦 <input class="input_distance" v-model="input_distance_2" :placeholder="default_distance_2" /> 公尺遠的東西<br>
     </p>
