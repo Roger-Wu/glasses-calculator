@@ -36,5 +36,6 @@ body {
   color: #404040;
   padding: 0.75rem 1rem;
   font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 </style>
